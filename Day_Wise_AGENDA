@@ -48,37 +48,44 @@ Ansible Role Structure
 Creating Ansible Role
 Ansible Vault
 Managing Sensitive Files with ansible-vault
-Error Handling and Troubleshooting
 
 Day 6:
 ===================================
+Error Handling and Troubleshooting
 Working with Dynamic Inventory
 Creating a Dynamic Inventory Script
 Managing Inventory Variables
+
+Day 7:
+=======================================
 Introduction to Terraform
 Setting Up and configuring Terraform
 Benefits Of Terraform
 Terraform Cloud Provider
 Configuring cloud providers with terraform
 Creating First Terraform Script
-
-Day 7:
-=======================================
 Terraform Registry
 Terraform variable and output blocks
-Terraform Loops & Dynamic block
-Implementing loops with count
-Using Terraform Dynamic Blocks and Built-in Functions to Deploy to AWS
 
 Day 8:
 =======================================
+Terraform Loops & Dynamic block
+Implementing loops with count
+Using Terraform Dynamic Blocks and Built-in Functions to Deploy to AWS
 Terraform Provisioners
 Terraform Provisioner types
 Implementing local-exec provisioners
+
+Day 9:
+=================================
 Implementing remote-exec provisioners
 Terraform Workflow
 Terraform Modules
 
+Day 10:
+===============================
+Ansible with Windows host
+Course end Porjects
 
 
 
