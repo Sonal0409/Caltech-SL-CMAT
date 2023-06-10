@@ -1,0 +1,180 @@
+
+Day 1: Configuration management with Ansible Notes
+===========================================
+
+Configuration:
+ - install software/package
+ - Create groups, users, permssions
+ - directory, files
+ - copy file form source to a destination
+ - Changes on the VM
+
+But if we have to configure/chnages on 200 servers, its difficult to do manually
+
+In realtime we work on various environments:  Dev, test, prod
+ - different configuration of different environment
+ - manually managing varioud environments is difficult
+ - Traditionally we have used scripts to automate the Servers, VMs
+ - but writing/managing/understading scripts is difficult
+So we need a CM tool that can do changes on various VM which are part of an environment
+
+Features of CM tools:
+
+ - Manage software configuration effectively
+
+ - Less manual errors while performing configuration changes
+ 
+ - Manage multiple environments/ consistent environments
+
+ - Store the CM tool automation code in github
+
+ - Deploy apps source code
+
+ - chnages have been done/which host servers.
+
+Some of the important CM tools:
+
+ > Puppet
+ > Chef
+ > Saltstack
+ > Ansible
+
+Pull approch
+ - puppet
+ - chef
+In pull approch changes are pulled by the agent process
+Controller will not make any chnages to the host servers
+Changes are applied based on pull schedule
+In puppet Code is written in DSL - manifest files
+Chef the code written in RUBY
+
+push approch
+ - saltstack
+ - Ansible
+These tools are used for CM as well as for deployment
+These can parallely manage/chnages on various servers using push approch
+With push approch chnages are applied immediatly on various servers
+No agent process runs on the host servers
+Entire conguration is managed by Controller machine
+Code is written in YAML
+
+
+
+Ansible Architecture
+- Ansible Controller:
+
+ - Inventory:
+=====================
+
+Inventory is a simple file which is updated by ansible user with hostnames or ipaddress of servers where ansible has to do changes.
+Name of the file by default is hosts
+This inventory file by default is available at the location /etc/ansible/hosts
+This inventory can be created in any location on the server.
+Inventory file can be based on user or apps or environment based
+There are 2 types of inventory files:
+ > Static inventory file -> manually updating the hosts servers ipaddress/names
+ > Dynamic inventory file --> automatically created with ipaddress details of servers on the cloud
+
+- Modules:
+=================================
+Ansible works by connecting to your nodes and pushing out scripts called “Ansible modules” to them. 
+Most modules accept parameters that describe the desired state of the system. Ansible then executes these modules (over SSH by default), and removes them when finished. Your library of modules can reside on any machine, and there are no servers, daemons, or databases required.
+
+All module information is available at:
+https://docs.ansible.com/ansible/2.8/modules/list_of_all_modules.html
+
+They are nothing but python scripts that are pushed on the host servers to make changes These modules accept some parameters to configure the desired state of changes Example: Copy module with take parameters like src location and dest location
+
+copy: src=/tmp/sonal.txt dest=/tmp
+There are 4000+ modules are there in ansible.
+Every module has a parameter list, and example mentioned on how to use parameters
+https://docs.ansible.com/ansible/2.8/modules/list_of_all_modules.html
+
+Ansible configuration file:
+=========================
+This file is used to customize ansible controllers settings and connection
+the default location of this file is /etc/ansible/ansible.cfg
+You can also generate your configuration file in anyother location
+2 types are parameters:
+ > defaults
+ > privilege
+kind of paramneters that you can cutomize for ansible using this file are:
+
+  > location of inventory file
+  > remote_user
+  > password
+  > fork =12
+  > permissions
+
+Playbooks:
+======================
+
+> Ansible code written in YAML
+> In playbooks we write host information -> where configurations are to be done
+> We write tasks, which consist of modules and parameters --> what configurations are to be done
+> playbook is converted into python code and is copied on the host servers using SSH
+> windows playbook are converted into poewershell scripts and copied on the hosts ervers using WINRM
+> in case of ssh on windows we dontnot need pywinrm either it converts code to powershell on the controller .
+
+
+=====================================
+
+All the SL lab nodes have OS - ubuntu
+
+Setup of Ansible controller on Master node of the lab
+=====================================
+
+Step 1: Change the hostname of the master node
+
+Step 2: Become the root user
+
+Step 3: Install ansible
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
