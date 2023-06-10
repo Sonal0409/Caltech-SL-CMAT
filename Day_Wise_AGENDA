@@ -1,0 +1,90 @@
+Day 1:
+==================================
+Understanding Configuration Management
+Understanding Infrastrcture as code
+Introduction to Ansible
+Setting up Ansible on Lab
+How to configure Ansible
+Understanding Ansible configuration File
+Managing Ansible Inventory
+Creating Static Host Inventory
+Host and Groups Configuration
+
+Day2:
+=====================================
+Managing Ansible remote connections
+Introduction to Ad-Hoc Commands
+Ansible Modules for Ad-Hoc Commands
+Ansible Playbooks
+Introduction to YAML
+Overview of YAML Syntax
+Data types in YAML
+Sequences and Mappings in YAML
+Creating your First Playbook
+Debug Module, Register
+Running the Playbook
+Using Variables in Playbook
+
+Day 3:
+=======================================
+Fact Variables in Ansible
+Using fact Variables in Ansible Playbook
+Task iterations with loops
+Executing loops in a playbook
+Conditional Tasks with Ansible
+Using conditionals in Ansible Playbook
+
+Day 4:
+=======================================
+Ansible Handlers
+Configuring Task with Hanndlers
+Introduction to Jinja2 Template
+Using Jina2 template in Ansible Playbook
+
+Day 5:
+===================================
+Ansible Roles
+Ansible Role Structure
+Creating Ansible Role
+Ansible Vault
+Managing Sensitive Files with ansible-vault
+Error Handling and Troubleshooting
+
+Day 6:
+===================================
+Working with Dynamic Inventory
+Creating a Dynamic Inventory Script
+Managing Inventory Variables
+Introduction to Terraform
+Setting Up and configuring Terraform
+Benefits Of Terraform
+Terraform Cloud Provider
+Configuring cloud providers with terraform
+Creating First Terraform Script
+
+Day 7:
+=======================================
+Terraform Registry
+Terraform variable and output blocks
+Terraform Loops & Dynamic block
+Implementing loops with count
+Using Terraform Dynamic Blocks and Built-in Functions to Deploy to AWS
+
+Day 8:
+=======================================
+Terraform Provisioners
+Terraform Provisioner types
+Implementing local-exec provisioners
+Implementing remote-exec provisioners
+Terraform Workflow
+Terraform Modules
+
+
+
+
+
+
+
+
+
+
