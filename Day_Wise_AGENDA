@@ -5,13 +5,14 @@ Understanding Infrastrcture as code
 Introduction to Ansible
 Setting up Ansible on Lab
 How to configure Ansible
+
+
+Day2:
+=====================================
 Understanding Ansible configuration File
 Managing Ansible Inventory
 Creating Static Host Inventory
 Host and Groups Configuration
-
-Day2:
-=====================================
 Managing Ansible remote connections
 Introduction to Ad-Hoc Commands
 Ansible Modules for Ad-Hoc Commands
