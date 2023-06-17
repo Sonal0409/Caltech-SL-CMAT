@@ -16,6 +16,10 @@ Host and Groups Configuration
 Managing Ansible remote connections
 Introduction to Ad-Hoc Commands
 Ansible Modules for Ad-Hoc Commands
+
+
+Day 3:
+=======================================
 Ansible Playbooks
 Introduction to YAML
 Overview of YAML Syntax
@@ -25,18 +29,16 @@ Creating your First Playbook
 Debug Module, Register
 Running the Playbook
 Using Variables in Playbook
-
-Day 3:
-=======================================
 Fact Variables in Ansible
 Using fact Variables in Ansible Playbook
+
+
+Day 4:
+=======================================
 Task iterations with loops
 Executing loops in a playbook
 Conditional Tasks with Ansible
 Using conditionals in Ansible Playbook
-
-Day 4:
-=======================================
 Ansible Handlers
 Configuring Task with Hanndlers
 Introduction to Jinja2 Template
