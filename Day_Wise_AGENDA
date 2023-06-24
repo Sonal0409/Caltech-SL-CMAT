@@ -39,28 +39,30 @@ Task iterations with loops
 Executing loops in a playbook
 Conditional Tasks with Ansible
 Using conditionals in Ansible Playbook
+
+
+Day 5:
+===================================
 Ansible Handlers
 Configuring Task with Hanndlers
 Introduction to Jinja2 Template
 Using Jina2 template in Ansible Playbook
 
-Day 5:
-===================================
-Ansible Roles
-Ansible Role Structure
-Creating Ansible Role
-Ansible Vault
-Managing Sensitive Files with ansible-vault
 
 Day 6:
 ===================================
-Error Handling and Troubleshooting
-Working with Dynamic Inventory
-Creating a Dynamic Inventory Script
-Managing Inventory Variables
+Ansible and Jenkins integration- Demo Course End project1
+Ansible Roles
+Ansible Role Structure
+Creating Ansible Role
 
 Day 7:
 =======================================
+Working with Dynamic Inventory
+Creating a Dynamic Inventory Script
+Managing Inventory Variables
+Ansible Vault
+Managing Sensitive Files with ansible-vault
 Introduction to Terraform
 Setting Up and configuring Terraform
 Benefits Of Terraform
